@@ -14,7 +14,7 @@ WSI contains multiple level of resolutions to acheive rapid retrieval of subregi
 
 In this project, we devide WSI into tumor-annotated small tiles (256x256) to accomplish pointwise classification of tumor existence. CNN is applied to represent feature of image, and dense network with softmax activation for predicting possibility of tumor. Finally, all the tiles are collated into WSI, representing probability map of tumor.
 
-![대체 텍스트(alt)](images/scheme.png)
+![scheme](images/scheme.png)
 
 ## Data description
 
@@ -111,6 +111,9 @@ for slide in slides:
 ```
 
 Predicted probability map will be saved as `(slide name)_heatmap_pred.png`. For comparison, true annotation mask will also saved as `(slide name)_heatmap_true.png`.
+
+Example of prediction:
+![prediction](images/prediction.png)
 
 ## References & resources
 
