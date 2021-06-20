@@ -134,9 +134,6 @@ ax.set_title('std deviation image')
 ax.imshow(std_img)
 ax.axis('off') 
 
-print('Mean colors: ', mean_pixel)
-print('Std Dev colors: ', std_pixel)
-
 plt.figure(figsize=(12,4))
 
 itera = train_data.generator(1, 1, True, mean_pixel, std_pixel)
